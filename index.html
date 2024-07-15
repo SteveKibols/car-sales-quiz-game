@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Sales Scenario Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Sales Scenario Quiz</h1>
+        <div id="start-screen">
+            <h2>Welcome to the Car Sales Scenario Quiz!</h2>
+            <p>Play the role of a car sales representative and recommend features or services to different customer types.</p>
+            <h3>Rules:</h3>
+            <ul>
+                <li>5 rounds, one for each customer type</li>
+                <li>Select multiple recommendations per customer</li>
+                <li>Score up to 3 points per round (max 15 total)</li>
+                <li>Points based on matching customer priorities</li>
+            </ul>
+            <button onclick="startQuiz()" class="start-btn">Start Quiz</button>
+        </div>
+        <div id="quiz-container" class="hide">
+            <div id="customer-info"></div>
+            <div id="options"></div>
+            <div id="submit-container"></div>
+            <div id="feedback"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
