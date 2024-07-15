@@ -82,6 +82,7 @@ function nextRound() {
         displayCustomer();
         displayRecommendations();
         displaySubmitButton();
+        window.scrollTo(0, 0);
     } else {
         showFinalScore();
     }
@@ -154,7 +155,6 @@ function checkAnswer() {
         <p>Matching priorities: ${Array.from(matchingPriorities).join(", ") || "None"}</p>
     `;
 
-    // Scroll to the feedback section
     document.getElementById("feedback").scrollIntoView({ behavior: "smooth" });
 
     setTimeout(() => {
